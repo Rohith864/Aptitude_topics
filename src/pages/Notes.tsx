@@ -98,6 +98,162 @@ const Notes = () => {
         ]
       }
     },
+    'Profit & Loss': {
+      icon: <Book className="w-6 h-6" />,
+      content: {
+        basics: "Profit & Loss deals with buying and selling of goods. Profit occurs when selling price > cost price, loss when selling price < cost price.",
+        keyFormulas: [
+          "Profit = Selling Price - Cost Price",
+          "Loss = Cost Price - Selling Price",
+          "Profit% = (Profit/Cost Price) × 100",
+          "Loss% = (Loss/Cost Price) × 100",
+          "SP = CP × (1 + Profit%/100)",
+          "CP = SP × 100/(100 + Profit%)"
+        ],
+        importantConcepts: [
+          "Marked Price: Price marked on the article",
+          "Discount: Reduction from marked price",
+          "Trade Discount: Discount given to retailers",
+          "Cash Discount: Discount for immediate payment"
+        ],
+        tips: [
+          "If SP of x articles = CP of y articles, then Profit% = [(y-x)/x] × 100",
+          "For successive discounts of a% and b%: Net discount = a + b - ab/100",
+          "Cost price can never be negative"
+        ]
+      }
+    },
+    'Ratio & Proportion': {
+      icon: <Target className="w-6 h-6" />,
+      content: {
+        basics: "Ratio is the comparison of two quantities of the same kind. Proportion is the equality of two ratios. Ratios help in comparing quantities and solving problems involving parts and wholes.",
+        keyFormulas: [
+          "Ratio a:b = a/b",
+          "If a:b = c:d, then ad = bc (Cross multiplication)",
+          "Direct Proportion: If a increases, b increases (a/b = constant)",
+          "Inverse Proportion: If a increases, b decreases (a×b = constant)",
+          "Mean Proportional between a and c = √(ac)",
+          "Third Proportional to a and b = b²/a"
+        ],
+        importantConcepts: [
+          "Compound Ratio: (a:b) and (c:d) gives (ac:bd)",
+          "Duplicate Ratio: (a:b) gives (a²:b²)",
+          "Sub-duplicate Ratio: (a:b) gives (√a:√b)",
+          "Continued Proportion: a:b = b:c, then b² = ac"
+        ],
+        tips: [
+          "To compare ratios, convert to same denominator",
+          "In age problems, use present age ratios and future/past conditions",
+          "For mixture problems, use component ratios"
+        ]
+      }
+    },
+    'Averages': {
+      icon: <Calculator className="w-6 h-6" />,
+      content: {
+        basics: "Average is the central value of a set of numbers. It represents the typical value and is calculated by dividing the sum of all values by the number of values.",
+        keyFormulas: [
+          "Average = Sum of all values / Number of values",
+          "Sum = Average × Number of values",
+          "New Average = (Old Sum ± Change) / New Count",
+          "Average of first n natural numbers = (n+1)/2",
+          "Average of first n even numbers = n+1",
+          "Average of first n odd numbers = n"
+        ],
+        importantConcepts: [
+          "Weighted Average: When different values have different importance",
+          "Moving Average: Average changes as new data is added",
+          "Age Average: Average age increases by 1 each year",
+          "Speed Average: For equal distances, use harmonic mean"
+        ],
+        tips: [
+          "When a new number is added, total sum changes by that number",
+          "If average increases by x, total increase = x × count",
+          "For time-speed problems with equal distances, use 2ab/(a+b) formula"
+        ]
+      }
+    },
+    'Data Interpretation': {
+      icon: <Target className="w-6 h-6" />,
+      content: {
+        basics: "Data Interpretation involves analyzing and drawing conclusions from data presented in various formats like tables, graphs, charts, and diagrams. It tests analytical and mathematical skills.",
+        keyFormulas: [
+          "Percentage = (Part/Whole) × 100",
+          "Growth Rate = [(New Value - Old Value)/Old Value] × 100",
+          "Average = Sum of values / Number of values",
+          "Ratio = Value1 : Value2",
+          "Proportion = (Part/Whole) × Total",
+          "Index = (Current Value/Base Value) × 100"
+        ],
+        importantConcepts: [
+          "Bar Charts: Compare quantities across categories",
+          "Line Graphs: Show trends over time",
+          "Pie Charts: Show parts of a whole (360° total)",
+          "Tables: Organized data in rows and columns",
+          "Histograms: Show frequency distribution",
+          "Scatter Plots: Show correlation between variables"
+        ],
+        tips: [
+          "Read titles, labels, and units carefully",
+          "Look for patterns and trends in data",
+          "Calculate percentages for easy comparison",
+          "Use approximation for quick calculations"
+        ]
+      }
+    },
+    'Permutations & Combinations': {
+      icon: <Lightbulb className="w-6 h-6" />,
+      content: {
+        basics: "Permutations deal with arrangements where order matters. Combinations deal with selections where order doesn't matter. These concepts are fundamental in probability and counting problems.",
+        keyFormulas: [
+          "nPr = n!/(n-r)! (Permutations)",
+          "nCr = n!/[r!(n-r)!] (Combinations)",
+          "nPr = r! × nCr",
+          "nC0 = nCn = 1",
+          "nCr = nC(n-r)",
+          "Circular Permutations = (n-1)!"
+        ],
+        importantConcepts: [
+          "Factorial: n! = n × (n-1) × (n-2) × ... × 1",
+          "Repetition: When objects are identical, divide by repetition factorial",
+          "Restriction: Handle restrictions by fixing positions first",
+          "Selection: Use combinations when order doesn't matter"
+        ],
+        tips: [
+          "For arrangements, use permutations; for selections, use combinations",
+          "Handle restrictions by considering them first",
+          "For circular arrangements, fix one position to avoid repetition"
+        ]
+      }
+    },
+    'Logical Puzzles': {
+      icon: <Book className="w-6 h-6" />,
+      content: {
+        basics: "Logical puzzles test reasoning ability through problems involving arrangements, relationships, coding, and pattern recognition. They require systematic thinking and logical deduction.",
+        keyFormulas: [
+          "Seating: Linear arrangements use positions 1,2,3...",
+          "Circular: n people in circle = (n-1)! arrangements",
+          "Blood Relations: Draw family tree for complex relations",
+          "Coding: Find pattern in letter/number substitution",
+          "Direction: Use compass directions (N=0°, E=90°, S=180°, W=270°)",
+          "Series: Find common difference or ratio"
+        ],
+        importantConcepts: [
+          "Seating Arrangement: Linear, circular, rectangular patterns",
+          "Blood Relations: Father, mother, son, daughter, uncle, aunt relationships",
+          "Coding-Decoding: Letter shifting, number patterns, symbol substitution",
+          "Direction Sense: Clockwise/anticlockwise turns, final direction",
+          "Logical Sequence: Number series, letter series, pattern completion",
+          "Syllogism: All, some, no statements and logical conclusions"
+        ],
+        tips: [
+          "Draw diagrams for seating and blood relation problems",
+          "Use elimination method for multiple possibilities",
+          "Practice common coding patterns (A=1, B=2, etc.)",
+          "For directions, track angle changes systematically"
+        ]
+      }
+    },
     'Time, Speed & Distance': {
       icon: <Target className="w-6 h-6" />,
       content: {
