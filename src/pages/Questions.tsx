@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, CheckCircle, XCircle, RotateCcw, Trophy, Clock } from 'lucide-react';
+import { ChevronDown, ChevronRight, CheckCircle, XCircle, RotateCcw, Trophy, Clock, Lightbulb } from 'lucide-react';
 
 const Questions = () => {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
